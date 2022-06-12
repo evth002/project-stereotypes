@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: open-sans, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 36px 0;
+    background: #73D273;
+    border-radius: 0px 0px 32px 32px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_link {
+    display: inline-block;
+    color: #131313;
+    text-decoration: none;
+    margin-left: 32px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+.header_text {
+    margin-top: 24px;
+}
+.img_arms {
+    width: 45%;
+}
+
+main {
+    margin: 80px 0;
+}
+
+.stories_blocks, .advices_blocks {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.story_block, .advice {
+    width: 32%;
+    padding: 24px;
+    background: #FCFCFC;
+    border: 1px solid #EEEEEE;
+    border-radius: 20px;
+}
+.advice {
+    width: 24%;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user_name {
+    margin-left: 10px;
+}
+.block_text, .advice_text {
+    margin: 20px 0;
+}
+.read_all, .advice_link {
+    color: #73D273;
+}
+.arrow {
+    margin-left: 5px;
+    width: 7%;
+}
+.see_more {
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    border: 2px solid #73D273;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #73D273;
+    background-color: #FFFFFF;
+    margin-bottom: 80px;
+}
+.advice_tittle {
+    color: #73D273;
+}
+
+.padding {
+    margin-top: 20px;
+    padding: 50px 0 200px 0;
+    background-color: #EEEEEE;
+    
+}
+.padding_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.padding_logo_and_text {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.padding_text {
+    width: 50%;
+}
+
+.see_more:hover {
+    background-color: #73D273;
+    color: white;
+    transition: 0.3s;
+}
+.user_profile_icon {
+    border: none;
+    background-color: #73D273;
+    margin-left: 20px;
+}
+
+
+.entrance, .registraion {
+    position: fixed;
+    transition: .6s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.entrance_closed, .registraion_closed {
+    visibility: hidden;
+    opacity: 0;
+}
+.entrance_window, .registration_window {
+    position: relative;
+    margin: auto;
+    /* top: 10%; */
+    background-color: white;
+    width: 40%;
+    padding: 20px 50px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.entrance_window_closer, .registration_window_closer, .entrance_window_closer2, .registration_window_closer2 {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+input[type="file"] {
+    display: none;
+}
+.form_div, .entrance_div {
+    margin: 10px;
+    padding: 20px 20px 10px 20px;
+    text-align: left;
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+    margin: 15px 0 0 0;
+}
+input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+}
+.enter {
+    width: 100%;
+    background: #73D273;
+    border-radius: 1000px;
+    padding: 20px;
+    border: none;
+    margin-top: 20px;
+}
+.registration_button {
+    width: 100%;
+    color: #73D273;
+    border-radius: 1000px;
+    padding: 20px;
+    border: 2px solid #73D273;
+    margin-top: 20px;
+}
+.registeration_text {
+    margin: 10px;
+}
+#tell_your_story_textarea {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+}
+#password_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fa-eye-slash {
+    visibility: hidden;
+    opacity: 0;
+}
+#password_input {
+    position: relative;
+}
+.fa-eye-slash, .fa-eye {
+    position: absolute;
+    right: 60px;
+    bottom: 180px;
+}
+
+
+
+@media(max-width: 1050px){
+    .advice {
+        max-width: 45%;
+    }
+}
+@media(max-width: 950px){
+    .story_block {
+        width: 100%;
+    }
+}
+
+
