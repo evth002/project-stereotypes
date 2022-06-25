@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-    
+
 <body>
     <header>
         <div class="container">
@@ -23,5 +24,105 @@
             </nav>
         </div>
     </header>
+    <main>
+        <div class="user_profile_background">
+            <input id="file-upload" type="file">
+        </div>
+        <div class="container">
+            <div class="user_profile_info">
+                <img src="img/kyomoto.png" alt="#" class="user_icon">
+                <h2 class="user_name">theo</h2>
+            </div>
+            <div class="user_profile_mode">
+                <div class="user_posts_mode">
+                    <button class="mode_posts">Мои посты</button>
+                    <hr class="mode_posts_hr">
+                </div>
+                <div class="user_opinions_mode">
+                    <button class="mode_opinions">Мои реакции</button>
+                    <hr class="mode_opinions_hr">
+                </div>
+            </div>
+            <div class="users_posts_and_opinions">
+                <div class="users_posts">
+                    <p class="users_posts_intro">
+                        Здесь будут отображаться ваши посты. Вы можете поделиться своей историей принятия себя, рассуждать о
+                        красоте, делиться своими фотографиями или работами, связанными с темой внешности.
+                    </p>
+                </div>
+                <div class="users_opinions">
+                    <p class="users_opinions_intro">
+                        Здесь будут видны ваши ответы и вопросы из раздела "Обсуждения"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="registraion" class="registraion registraion_closed">
+        <div class="registration_window">
+            <form action="submit">
+                <h2>Регистрация</h2>
+                <button id="window_closer" class="registration_window_closer"><img src="img/x.png" alt="#"></button>
+                <p class="registeration_text">Наш сайт приветствует тебя! Если утебя нет аккаунта то быстрее регистрируй
+                    его! Мы ждем тебя)
+                </p>
+
+                <label for="file-upload">
+                    <img src="img/addicon.png" alt="#">
+                </label>
+                <input id="file-upload" type="file">
+
+                <div class="form_div">
+                    <label for="text">Имя аккаунта</label>
+                    <input type="text" placeholder="samtheman" name="name" required>
+                </div>
+                <div class="form_div">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="mymail@pochta.dom" name="email" required>
+                </div>
+                <div class="form_div password_div">
+                    <div>
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password_input" class="password_input1" placeholder="12345678"
+                            name="password" required>
+                    </div>
+
+                    <i class="fa-regular fa-eye fa-eye1"></i>
+                    <i class="fa-regular fa-eye-slash fa-eye-slash1"></i>
+
+                </div>
+
+                <!-- <textarea name="text" id="tell_your_story_textarea" cols="60" rows="10">Расскажи свою историю</textarea> -->
+
+                <button class="registration_button">Зарегистрироваться</button>
+                <button id="open_entrance_button" class="enter">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="entrance" class="entrance entrance_closed">
+        <div class="entrance_window">
+            <h2>Вход</h2>
+            <button id="window_closer2" class="entrance_window_closer2"><img src="img/x.png" alt="#"></button>
+            <div>
+                <div class="entrance_div">
+                    <label for="text">Имя аккаунта или почта</label>
+                    <input type="text" placeholder="samtheman" name="name" required>
+                </div>
+                <div class="entrance_div">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password_input" class="password_input2 placeholder=" 12345678"
+                        name="password" required>
+                    <i class="fa-regular fa-eye fa-eye2"></i>
+                    <i class="fa-regular fa-eye-slash fa-eye-slash2"></i>
+                </div>
+            </div>
+
+            <a href="user_page.html" class="open_entrance_a"><button id="open_entrance_button"
+                    class="enter">Войти</button></a>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -117,6 +117,9 @@ main {
     background-color: #FFFFFF;
     margin-bottom: 80px;
 }
+.see_more_a {
+    text-decoration: none;
+}
 .advice_tittle {
     color: #73D273;
 }
@@ -177,6 +180,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.open_entrance_a {
+    display: block;
 }
 .entrance_window_closer, .registration_window_closer, .entrance_window_closer2, .registration_window_closer2 {
     border: none;
@@ -253,7 +259,7 @@ input:focus {
 .entrance_div, .password_div {
     position: relative;
 }
-i {
+.fa-eye, .fa-eye-slash {
     position: absolute;
     bottom: 20px;
     right: 30px;
@@ -271,7 +277,7 @@ i {
     flex-direction: column;
 }
 .introduction {
-    margin-bottom: 40px;
+    margin: 20px 0 40px 0;
 }
 .discuser {
     display: flex;
@@ -320,21 +326,145 @@ i {
 }
 .opinion {
     margin: 20px 0;
+    position: relative;
 }
-.reactions {
-    width: 200px;
+.likes_and_comments {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+}
+.reaction {
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+.reactions i {
+    font-size: 20px;
+    margin-right: 0px;
+}
+.opinion_text {
+    margin: 20px 0;
+}
+.see_all_comments {
+    border: 1px solid #73D273;
+    border-radius: 30px;
+    background-color: #73D273;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.see_all_comments.p {
+    margin-right: 10px;
+}
+hr {
+    color: #73D273;
+    margin-top: 20px;
+}
+.expand_p {
+    margin-right: 10px;
+}
+.solid-heart {
+    color: #73D273;
+    opacity: 0;
+    visibility: hidden;
+}
+.like, .comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 15px;
+}
+.regular-heart, .solid-heart {
+    position: absolute;
 }
 
+.add_comment_block {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.add_comment_block div {
+    position: relative;
+    width: 95%;
+}
 
+.add_comment_input_text {
+    padding: 10px;
+    color: gray;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.fa-paperclip {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 20px;
+}
+.send_comment_button {
+    border: none;
+    background-color: transparent;
+    margin-left: 15px;
+}
+.fa-share {
+    font-size: 20px;
+}
+/* .comments {
+    opacity: 0;
+    visibility: hidden;
+} */
 
+.user_profile_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.user_icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.user_profile_mode {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.user_posts_mode, .user_opinions_mode {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user_profile_mode hr {
+    width: 10%;
+}
+.mode_posts_hr {
+    border: #73D273 2px solid;
+}
+.mode_opinions_hr {
+    border: gray 1px solid;
+}
+.mode_posts, .mode_opinions {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
 
-
-
-
-
+.users_posts, .users_opinions {
+    position: absolute;
+    top: 30px;
+}
+.users_posts_and_opinions {
+    position: relative;
+}
+.users_opinions {
+    opacity: 0;
+    visibility: hidden;
+}
 
 
 
