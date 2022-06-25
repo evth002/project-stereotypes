@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1d1eb2a775.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="nav_logo"><img src="img/loveyourself.png" alt="#" class="logo_img"></a>
+                <div class="nav_links">
+                    <a href="main.html" class="nav_link">Главная</a>
+                    <a href="discussions.html" class="nav_link">Обсуждения</a>
+                    <button class="user_profile_icon"><img src="img/userprofile.png" alt="#"></button>
+                </div>
+            </nav>
+            <div class="issue">
+                <a href="discus1.html" class="discus_h1">
+                    <h1>Что есть красота и какова ее роль в нашей жизни?</h1>
+                </a>
+                <p class="discus_text">
+                    Понятие красоты для каждого человека индивидуально, и не всегда оно совпадает с
+                    общественным. Стандарты красоты всегда зависели от того, какому народу и историческому периоду
+                    принадлежали. Выходит, красота - понятие субъективное, меняющееся со временем. Так действительно ли
+                    она так важна в нашей жизни? Нужно ли подстраиватья под мнение общества или слушать только себя?
+                    Какое значение красота имеет в нашем мире? У каждого свое мнение на этот счет.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container opinions">
+            <div class="opinion">
+                <div class="discuser">
+                    <img src="img/user1.png" alt="#" class="discuser_ava">
+                    <p class="discuser_name">Hello Kitty</p>
+                </div>
+                <p class="opinion_text">
+                    красота важно только на первое время общение, дальше нужно больше, внутренний мир и т.д.
+                </p>
+                <form class="reactions">
+                    <div class="likes_and_comments">
+                        <div class="like">
+                            <button class="reaction like">
+                                <i class="fa-regular fa-heart regular-heart"></i>
+                                <i class="fa-solid fa-heart solid-heart"></i>
+                            </button>
+                            <p class="likes_amount">5</p>
+                        </div>
+                        <form class="comment">
+                            <button class="reaction add_comment"><i class="fa-regular fa-comment"></i></button>
+                            <p class="comments_amount">2</p>
+                        </form>
+                    </div>
+                    <div class="add_comment_block">
+                        <div class="add_comment">
+                            <input type="text" class="add_comment_input add_comment_input_text" placeholder="Добавить комментарий">
+                            <label for="file-upload">
+                                <i class="fa-solid fa-paperclip"></i>
+                            </label>
+                            <input type="file" class="add_comment_input add_comment_input_file"> 
+                        </div>
+                        <button class="send_comment_button">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                        <button class="see_all_comments">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </button>
+                    </div>
+                </form>
+                <hr>
+                <div class="comments">
+                    <div class="comment">
+                        <!-- <div class="discuser">
+                            <img src="img/kyomoto.png" alt="#" class="discuser_ava">
+                            <p class="discuser_name">theo</p>
+                        </div>
+                        <p class="comment_text"></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="opinion">
+                <div class="discuser">
+                    <img src="img/user1.png" alt="#" class="discuser_ava">
+                    <p class="discuser_name">Hello Kitty</p>
+                </div>
+                <p class="opinion_text">
+                    я считаю , что принять себя очень важно , тогда ты будешь относится к любым изменениям своего тела
+                    нормально , без осуждения
+                </p>
+                <div class="reactions">
+                    <div class="likes_and_comments">
+                        <div class="like">
+                            <button class="reaction like">
+                                <i class="fa-regular fa-heart regular-heart"></i>
+                                <i class="fa-solid fa-heart solid-heart"></i>
+                            </button>
+                            <p class="likes_amount"></p>
+                        </div>
+                        <div class="comment">
+                            <button class="reaction add_comment"><i class="fa-regular fa-comment"></i></button>
+                            <p class="comments_amount"></p>
+                        </div>
+                    </div>
+                    <div class="add_comment_block">
+                        <div class="add_comment">
+                            <input type="text" class="add_comment_input add_comment_input_text" value="Добавить комментарий">
+                            <label for="file-upload">
+                                <i class="fa-solid fa-paperclip"></i>
+                            </label>
+                            <input type="file" class="add_comment_input add_comment_input_file"> 
+                        </div>
+                        <button class="send_comment_button">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                        <button class="see_all_comments">
+                            <p class="comments_number"></p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="opinion">
+                <div class="discuser">
+                    <img src="img/user1.png" alt="#" class="discuser_ava">
+                    <p class="discuser_name">Hello Kitty</p>
+                </div>
+                <p class="opinion_text">
+                    Я думаю , что человек пока не захочет сам изменить своё отношение к этому , ему не помогут никакие
+                    комплименты ; это работает , но временно ; нужно перестать быть зависимым от мнения людей и
+                    прислушаться к себе ; это огромная работа и не всегда с этим можно справиться самостоятельно , но
+                    если человек хочет стать счастливым , ему нужно слушать только одного человека - это себя !!
+                </p>
+                <div class="reactions">
+                    <div class="likes_and_comments">
+                        <div class="like">
+                            <button class="reaction like">
+                                <i class="fa-regular fa-heart regular-heart"></i>
+                                <i class="fa-solid fa-heart solid-heart"></i>
+                            </button>
+                            <p class="likes_amount">7</p>
+                        </div>
+                        <div class="comment">
+                            <button class="reaction add_comment"><i class="fa-regular fa-comment"></i></button>
+                            <p class="comments_amount"></p>
+                        </div>
+                    </div>
+                    <div class="add_comment_block">
+                        <div class="add_comment">
+                            <input type="text" class="add_comment_input add_comment_input_text" value="Добавить комментарий">
+                            <label for="file-upload">
+                                <i class="fa-solid fa-paperclip"></i>
+                            </label>
+                            <input type="file" class="add_comment_input add_comment_input_file"> 
+                        </div>
+                        <button class="send_comment_button">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                        <button class="see_all_comments">
+                            <p class="comments_number"></p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="opinion">
+                <div class="discuser">
+                    <img src="img/berserk.png" alt="#" class="discuser_ava">
+                    <p class="discuser_name">Vistalia</p>
+                </div>
+                <p class="opinion_text">
+                    Мое мнение таково:
+                    Красота, очевидно, важна. Но человеку достаточно быть не жирным, следить за своим телом и гигиеной
+                    чтобы не вызывать отвращения. Или обладать хорошей внешностью чтобы распологать к себе. Но к
+                    внешности относится не только личико, а прическа, борода, пирсинг, так что даже хорошее личико легко
+                    можно испортить.
+
+                    Если человек ненавидит свою внешность, это значит, что она плохая. И под принятием я понимаю лишь
+                    то, что человек принимают свою плохую внешность, а не называет ее красиво, обманываю самого себя и
+                    называя это "принятием". Так обычно ведут себя люди, которые не ходят зазнаваться или девочки
+                    которым нужен комплимент.
+
+                    У каждого свои вкусы, но стандартны красоты определяет общество и на данный момент я с ними
+                    полностью солидарен.
+                </p>
+                <div class="reactions">
+                    <div class="likes_and_comments">
+                        <div class="like">
+                            <button class="reaction like">
+                                <i class="fa-regular fa-heart regular-heart"></i>
+                                <i class="fa-solid fa-heart solid-heart"></i>
+                            </button>
+                            <p class="likes_amount"></p>
+                        </div>
+                        <div class="comment">
+                            <button class="reaction add_comment"><i class="fa-regular fa-comment"></i></button>
+                            <p class="comments_amount"></p>
+                        </div>
+                    </div>
+                    <div class="add_comment_block">
+                        <div class="add_comment">
+                            <input type="text" class="add_comment_input add_comment_input_text" value="Добавить комментарий">
+                            <label for="file-upload">
+                                <i class="fa-solid fa-paperclip"></i>
+                            </label>
+                            <input type="file" class="add_comment_input add_comment_input_file"> 
+                        </div>
+                        <button class="send_comment_button">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                        <button class="see_all_comments">
+                            <p class="comments_number"></p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="registraion" class="registraion registraion_closed">
+        <div class="registration_window">
+            <form action="submit">
+                <h2>Регистрация</h2>
+                <button id="window_closer" class="registration_window_closer"><img src="img/x.png" alt="#"></button>
+                <p class="registeration_text">Наш сайт приветствует тебя! Если утебя нет аккаунта то быстрее регистрируй
+                    его! Мы ждем тебя)</p>
+
+                <label for="file-upload">
+                    <img src="img/addicon.png" alt="#">
+                </label>
+                <input id="file-upload" type="file" />
+
+                <div class="form_div">
+                    <label for="text">Имя аккаунта</label>
+                    <input type="text" placeholder="samtheman" name="name" required>
+                </div>
+                <div class="form_div">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="mymail@pochta.dom" name="email" required>
+                </div>
+                <div class="form_div password_div">
+                    <div>
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password_input" class="password_input1" placeholder="12345678" name="password" required>
+                    </div>
+
+                    <i class="fa-regular fa-eye fa-eye1"></i>
+                    <i class="fa-regular fa-eye-slash fa-eye-slash1"></i>
+
+                </div>
+
+                <!-- <textarea name="text" id="tell_your_story_textarea" cols="60" rows="10">Расскажи свою историю</textarea> -->
+
+                <button class="registration_button">Зарегистрироваться</button>
+                <button id="open_entrance_button" class="enter">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="entrance" class="entrance entrance_closed">
+        <div class="entrance_window">
+            <h2>Вход</h2>
+            <button id="window_closer2" class="entrance_window_closer2"><img src="img/x.png" alt="#"></button>
+            <div>
+                <div class="entrance_div">
+                    <label for="text">Имя аккаунта или почта</label>
+                    <input type="text" placeholder="samtheman" name="name" required>
+                </div>
+                <div class="entrance_div">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password_input" class="password_input2 placeholder="12345678" name="password" required>
+                    <i class="fa-regular fa-eye fa-eye2"></i>
+                    <i class="fa-regular fa-eye-slash fa-eye-slash2"></i>
+                </div>
+            </div>
+
+            <a href="user_page.html" class="open_entrance_a"><button id="open_entrance_button" class="enter">Войти</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
